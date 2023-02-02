@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Heebo', sans-serif;  
+}
+.logo{
+    
+    margin-top: -4rem;
+    
+}
+#empty,#empty2,#empty3,#empty4{
+    color: red;
+}
+.check {
+    display: block;
+    position: relative;
+    padding-right: 0;
+    padding-left: 35px;
+    margin-right: -13px;
+    margin-top: 3px;
+    cursor: pointer;
+    font-size: 5px;
+  }
+  
+  /* Hide the default checkbox */
+  .check input {
+    visibility: hidden;
+    cursor: pointer;
+  }
+  .fa-arrow-left{
+    margin-right: 10px;
+  }
+  
+  /* Create a custom checkbox */
+  .mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: lightgray;
+  }
+  
+  .check input ~ .mark {
+    background-color: #b2becc;
+  }
+  
+  .check input:checked ~ .mark {
+    background-color: blue;
+  }
+  
+  /* Create the mark/indicator (hidden when not checked) */
+  .mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the mark when checked */
+  .check input:checked ~ .mark:after {
+    display: block;
+  }
+  
+  /* Style the mark/indicator */
+  .check .mark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+#previous-button{
+    outline: none;
+    border-style: none;
+    background: transparent;
+    font-weight: 600;
+    color: #b2becc;
+}
+.empty-line , .error-line{
+    color: red;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.only-input{
+    padding: 1rem;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #b2becc;
+}
+.only-input::placeholder{
+    color: #b2becc;
+    font-weight: 450;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progressbar{
+    margin-bottom: 9rem;
+}
+.progressbar li{
+    margin: 1rem 0rem 1rem 0rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 4rem;
+}
+.progressbar li.active span{
+   
+}
+label[for=licence],label[for=registrationfiles],label[for=otherdocuments]{
+    border: 1px solid #b2becc;
+    width: 100%;
+    padding: 0.77rem;
+    color: #b2becc;
+    background-color: white;
+    font-size: 16px;
+}
+input[type=date]::-webkit-datetime-edit {
+    color: #b2becc;
+    font-weight: 450;
+}
+h5{
+    font-size: 16px;
+}
+select{
+    color: #b2becc;
+    font-weight: 450;
+    padding: 1rem;
+}
+select:focus{
+    outline: none;
+}
+.progressbar span{
+    padding: 7px 14px;
+    margin-bottom: 1rem;
+    border: 1px solid #0f7ef7;
+    height: 500px;
+    border-radius: 50%;
+    margin-right: 10px;
+   
+}
+.nexter.disabled{
+    display: none;
+}
+.content{
+    width: 70%;
+}
+.content h6{
+    margin-bottom: 3rem;
+    color: #b2becc;
+}
+.content h1{
+    font-weight: 800;
+}
+.content p:nth-child(3){
+    font-weight: 500;
+    margin: 15px 0px;
+}
+h6 i{
+    margin-right: 10px;
+}
+label{
+    font-weight: 600;
+}
+input[type=checkbox]::before{
+
+    height: 2rem;
+    color: black;
+    
+}
+input[type=checkbox]::after{
+
+    height: 2rem;
+    color: black;
+    
+}
+textarea{
+    resize: none;
+    padding: 0.6rem 1rem;
+    outline: none;
+    border: 1px solid #b2becc;
+    
+}
+textarea::placeholder{
+    color: #b2becc;
+    font-weight: 450;
+}
+
+.check-div{
+    display: flex;
+    border: 1px solid darkgray;
+    background-color: white;
+    padding: 1.2rem;
+    width: 100%;
+}
+.check-div p{
+    color: #b2becc;
+    font-weight: 600;
+}
+form{
+    overflow: hidden;
+}
+.next-button1{
+    background-color: #0f7ef7;
+    outline: none;
+    border-style: none;
+    color: white;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+}
+.next-button1:disabled{
+    background-color: rgb(43, 255, 0);
+}
+.nexter{
+    background-color: #0f7ef7;
+    outline: none;
+    border-style: none;
+    color: white;
+    padding: 1rem 2.5rem;
+    font-weight: 600;
+    
+    font-size: 16px;
+}
+.nexter2{
+    background-color: YELLOW;
+    position: absolute;
+    
+    
+    outline: none;
+    border-style: none;
+    color: white;
+    padding: 1rem 2.5rem;
+    font-weight: 600;
+    font-size: 16px;
+}
+.col-4{
+    background-color: white;
+    height: 100vh;
+}
+.col-8{
+    background-color: #f5f6f8;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+li.change{
+    color: blue;
+}
+span.changed{
+    content: "";
+}
+.file-label{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
